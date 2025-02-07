@@ -123,3 +123,21 @@ body {
         /* Adjust scale value as needed */
     }
 }
+
+
+/* // responsiveness  */
+@media screen and (max-width:600px) {
+    body{
+        padding: 1rem;
+    }
+    .animation-container{
+        padding: .5rem;
+    }
+    .stage{
+        padding: 1rem;
+        font-size: 14px;
+    }
+    .stage i{
+        font-size: 18px;
+    }
+}
