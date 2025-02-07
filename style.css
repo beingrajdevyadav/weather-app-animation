@@ -15,7 +15,7 @@ body {
 }
 
 
-.search-box{
+.search-box {
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
@@ -25,15 +25,18 @@ body {
     align-items: center;
     gap: 10px;
 }
-.search-box input{
+
+.search-box input {
     width: 75%;
     padding: 10px;
 }
-.search-box button{
+
+.search-box button {
     width: 25%;
     padding: 10px;
     cursor: pointer;
 }
+
 .animation-container {
     /* display: flex; */
     justify-content: center;
@@ -45,33 +48,38 @@ body {
     margin: 2rem auto;
 }
 
-.stage{
+.stage {
     padding: 2rem;
-   text-align: center;
+    text-align: center;
     border: 1px solid #ddd;
     border-radius: 5px;
-margin: 1rem;
+    margin: 1rem;
+    display: none;
 }
 
-.stage i{
+.stage i {
     font-size: 30px;
 }
 
-#gear{
+#gear {
     animation: rotate-gear 2s infinite;
 }
 
-#done{
+#done {
     animation: done 2s infinite;
 }
 
+
+.stage.active{
+    display: block;
+}
 /* # rotate animation */
 @keyframes rotate-gear {
-    0%{
+    0% {
         transform: rotate(0deg);
     }
-    
-    100%{
+
+    100% {
         transform: rotate(360deg);
         animation-timing-function: ease-in-out;
     }
@@ -80,12 +88,14 @@ margin: 1rem;
 /* # done animation  */
 
 @keyframes done {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: scale(1);
-      }
-      50% {
-        transform: scale(1.5); /* Adjust scale value as needed */
-      }
+    }
+
+    50% {
+        transform: scale(1.5);
+        /* Adjust scale value as needed */
+    }
 }
-
-
