@@ -14,20 +14,25 @@
 <body>
 
     <div class="search-box">
-        <input type="text" placeholder="Enter City Name" id="city">
-        <button id="search"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <input type="text" placeholder="Enter City Name" id="cityName">
+        <button id="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
     </div>
 
     <div id="animation-container" class="animation-container">
-        <div class="stage" id="stage1">
-            <i class="fa-solid fa-cloud" id="cloud"></i>
-            <h3>Weather In Noida</h3>
+        
+        <div class="stage active" >
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <h3>Search A City </h3>
         </div>
-        <div class="stage" id="stage2">
+        <div class="stage" >
+            <i class="fa-solid fa-cloud" id="cloud"></i>
+            <h3>Weather In <span id="city"></span></h3>
+        </div>
+        <div class="stage" >
             <i class="fa-solid fa-gear" id="gear"></i>
             <h3>Fetching Data...</h3>
         </div>
-        <div class="stage" id="stage3">
+        <div class="stage" >
             <i class="fa-regular fa-circle-check" id="done"></i>
             <h3>Successful.</h3>
         </div>

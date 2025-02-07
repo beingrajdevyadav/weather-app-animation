@@ -61,10 +61,14 @@ body {
     font-size: 30px;
 }
 
+
+
+#cloud{
+    animation: shake .5s infinite;
+}
 #gear {
     animation: rotate-gear 2s infinite;
 }
-
 #done {
     animation: done 2s infinite;
 }
@@ -72,6 +76,26 @@ body {
 
 .stage.active{
     display: block;
+}
+
+
+/* # shake animation  */
+@keyframes shake {
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(-5px);
+    }
+    50%{
+        transform: translateX(5px);
+    }
+    75%{
+        transform: translateX(-5px);
+    }
+    100%{
+        transform: translateX(0);
+    }
 }
 /* # rotate animation */
 @keyframes rotate-gear {
