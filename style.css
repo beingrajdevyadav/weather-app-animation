@@ -1,8 +1,91 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+
+body {
+    padding: 1rem;
+    background-color: #f1f1f1;
+    padding: 2rem 30%;
+    color: #333;
+}
+
+
+.search-box{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.search-box input{
+    width: 75%;
+    padding: 10px;
+}
+.search-box button{
+    width: 25%;
+    padding: 10px;
+    cursor: pointer;
+}
+.animation-container {
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 2rem auto;
+}
+
+.stage{
+    padding: 2rem;
+   text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+margin: 1rem;
+}
+
+.stage i{
+    font-size: 30px;
+}
+
+#gear{
+    animation: rotate-gear 2s infinite;
+}
+
+#done{
+    animation: done 2s infinite;
+}
+
+/* # rotate animation */
+@keyframes rotate-gear {
+    0%{
+        transform: rotate(0deg);
+    }
+    
+    100%{
+        transform: rotate(360deg);
+        animation-timing-function: ease-in-out;
+    }
+}
+
+/* # done animation  */
+
+@keyframes done {
+    0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.5); /* Adjust scale value as needed */
+      }
+}
+
+
